@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>WE Assignment</title>
+    </head>
+<body>
+    <h1>Instant Math Quiz</h1>
+    
+    <div id="operation">
+        <h4 id="selection">Select the Arithmetic Operation</h3>
+        <input type="radio" id="add" name="operator" value="+" checked>
+        <label for="add">Addition</label><br>
+        <input type="radio" id="subtract" name="operator" value="-">
+        <label for="subtract">Subtraction</label><br>
+        <input type="radio" id="multiply" name="operator" value="*">
+        <label for="multiply">Multiplication</label><br>
+        <input type="radio" id="divide" name="operator" value="/">
+        <label for="divide">Division</label><br>
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <div id="quiz">
+        <p><span id="counter"></span> <span id="question"></span></p>
+        <input type="text" id="answer" placeholder="" title="Enter your answer here"><br>
+        <button onclick="checkAnswer()">Submit</button>
+        <button onclick="exitQuiz()">Exit</button>
+        <p id="questionCounter"></p>
+    </div>
+    <div id="result">
+      <p id="finalScore"></p>
+      <p id="correctOutOf"></p>
+      <button onclick="resetQuiz()">Try Again</button>
+    </div>
+    <div id="thankYou">
+        <p>Thank you! Come back later.</p>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

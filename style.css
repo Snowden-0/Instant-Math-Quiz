@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 50px;
+}
+
+#operation input{
+    font-size: larger;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+#quiz, #result, #thankYou {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+#thankYou {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 5px 0 ;
+    border-radius: 5dvi;;
+    cursor: pointer;
+    width: 50%;
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+
+#answer {
+    text-align: center;
+    font-size: 20px;
+    width: 50%;
+}
+
+button:hover {
+    color: black;
+    background-color: #f0f0f0;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+#questionCounter {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 14px;
+}
